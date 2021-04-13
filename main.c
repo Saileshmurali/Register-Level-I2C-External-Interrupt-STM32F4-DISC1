@@ -12,8 +12,6 @@ uint8_t check,temp;
 int flag=0;
 void EXT_Init(void)
 {
-
-//1. Enable TIM@ and GPIO clock
 	RCC->APB1ENR |= (1<<0);  // enable PORTA clock
 	EXTI->RTSR |=(1<<0);
 	EXTI->IMR |=(1<<0);
